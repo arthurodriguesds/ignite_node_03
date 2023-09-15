@@ -25,7 +25,7 @@ export class RegisterUseCase {
     if (findConflictingEmail) {
       throw new AppError({
         error: {
-          message: 'Email inválido',
+          message: 'Email inválido.',
           errorCode: 1,
           statusCode: 409,
         },

@@ -23,7 +23,7 @@ export class AuthenticateUseCase {
     if (!user) {
       throw new AppError({
         error: {
-          message: 'Credenciais inválidas',
+          message: 'Credenciais inválidas.',
           errorCode: 3,
           statusCode: 422,
         },
@@ -35,7 +35,7 @@ export class AuthenticateUseCase {
     if (!passwordMatches) {
       throw new AppError({
         error: {
-          message: 'Credenciais inválidas',
+          message: 'Credenciais inválidas.',
           errorCode: 3,
           statusCode: 422,
         },
